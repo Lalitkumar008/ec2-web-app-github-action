@@ -23,6 +23,6 @@ jobs:
             cd "$APP"
             git pull --ff-only origin main
           else
-            git clone -b static "https://github.com/${{ github.repository }}.git" "$APP"
+            git clone -b main "https://github.com/${{ github.repository }}.git" "$APP"
           fi
           EOF
